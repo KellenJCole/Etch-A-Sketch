@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornflowerblue;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.header h1, .header h3 {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+    width: 63vw;
+    height: 42vw;
+    border: 5vw solid red;
+    border-radius: 20px;
+    box-shadow: 10px 10px #6E260E;
+}
+
+.grid-container .row {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.grid-container .row div {
+    flex: 1;
+}
+
+.main-row {
+    flex-grow: 0;
+    flex-shrink: 1;
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.buttons {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+
+.grid-size-adjustment, .pen-mode {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.button-p {
+    min-width: fit-content;
+    background-color: #5dbea3;
+    font-family:'Courier New', 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 2px 2px #111;
+    margin-right: 30px;
+}
+
+#grid-size {
+    width: 70px;
+}
+
+
+#erase-button {
+    min-width: fit-content;
+    padding: 8px 80px;
+    font-family:'Courier New', 'Courier New', Courier, monospace;
+    background-color: #6E260E;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 2px 2px #111;
+}
