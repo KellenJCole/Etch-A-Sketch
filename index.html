@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Etch A Sketch</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="header">
+                <h1>Etch A Sketch</h1>
+                <h3>A project by Kellen Cole</h3>
+            </div>
+            <div class="main-row">
+                <div class="grid-container">
+
+                </div>
+                <div class="buttons">
+                    <div class="grid-size-adjustment">
+                        <p class="button-p">Change grid size</p>
+                        <input value="16" id="grid-size">
+                    </div>
+                    <div class ="pen-mode">
+                        <p class="button-p">Change pen mode</p>
+                        <select name="modes" id="mode">
+                            <option value="solid">Solid</option>
+                            <option value="darken">Darken</option>
+                            <option value="rainbow">Rainbow</option>
+                        </select>
+                    </div>
+                    <div class="erase">
+                        <button id="erase-button"> Erase pad</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+
+    <script src="game.js"></script>
+</html>
